@@ -34,7 +34,7 @@ if word_guess1[4] == character_guess1:
 if matching_characters == 0:
     print("No instances of " + character_guess1 + " found in " + word_guess1)
 if matching_characters == 1:
-    print("1 instances of " + character_guess1 + " found in " + word_guess1)
+    print("1 instance of " + character_guess1 + " found in " + word_guess1)
 if matching_characters == 2:
     print("2 instances of " + character_guess1 + " found in " + word_guess1)
 if matching_characters == 3:
