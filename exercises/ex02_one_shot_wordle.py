@@ -1,6 +1,7 @@
-"""EX02 One Shot Wordle- One Step at a time."""
+"""EX02 - One Shot Wordle- One Step at a time."""
 
 __author__ = "730239487"
+
 secret: str = "python"
 word_guess1: str = input(f"What is your {len(secret)}-letter guess? ")
 while len(word_guess1) != len(secret):
