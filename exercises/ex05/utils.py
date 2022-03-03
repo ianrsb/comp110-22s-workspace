@@ -7,7 +7,7 @@ def only_evens(xs: list[int]) -> list[int]:
     """Returns only the even numbers in a list."""
     i: int = 0
     ys: list[int] = []
-    while i < len(xs):
+    while i <= len(xs):
         test: int = xs[i] // 2
         if test == 0:
             ys.append(xs[i])
@@ -15,14 +15,13 @@ def only_evens(xs: list[int]) -> list[int]:
     return ys
 
 
-def sub(bs: list[int]) -> list[int]:
-    """Returns two random values from the list to provide a sample.""" 
+def sub(bs: list[int], x: int, y: int) -> list[int]:
+    """Returns two  values from the list to provide a sample.""" 
     from random import randint
     cs: list[int] = []
     j: int = 0
-    l: int = len(bs) + 1
     while j < 2:
-        k: int = randint(0, l)
+        k: int = randint(x, y)
         if k > len(bs):
             k = -1
         cs.append(bs[k])
