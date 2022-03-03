@@ -20,9 +20,11 @@ def sub(bs: list[int]) -> list[int]:
     from random import randint
     cs: list[int] = []
     j: int = 0
-    l: int = len(bs)
+    l: int = len(bs) + 1
     while j < 2:
         k: int = randint(0, l)
+        if k > len(bs):
+            k = -1
         cs.append(bs[k])
         bs.pop(bs[k])  # removes variable from orginal list such that it is not sampled again
         j += 1
