@@ -24,7 +24,7 @@ def sub(bs: list[int]) -> list[int]:
     while j < 2:
         k: int = randint(0, l)
         cs.append(bs[k])
-        bs.pop(bs[k])
+        bs.pop(bs[k])  # removes variable from orginal list such that it is not sampled again
         j += 1
     return cs
 
@@ -39,5 +39,5 @@ def concat(cs: list[int], ds: list[int]) -> list[int]:
     n: int = 0 
     while n < len(ds):
         es.append(ds[n])
-        n += 1
+        n += 1  # this loop is after the second loop to ensure that the first list is added to the final list first
     return es
